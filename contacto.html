@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto · Entre sabores</title>
+    <meta name="description" content="Escribe a Entre sabores para proponer una receta, resolver una duda o contar cómo te ha salido un plato.">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="alternate" type="application/rss+xml" href="noticias.xml">
+  </head>
+  <body>
+    <!-- CABECERA -->
+    <header>
+      <img src="logo.svg" alt="Logotipo de Entre sabores: un plato con tenedor y cuchara" width="60" height="60">
+      <p>Entre sabores</p>
+    </header>
+
+    <!-- MENÚ -->
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="recetas.html">Recetas</a>
+      <a href="info.html">Información</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <main>
+      <h1>Contacto</h1>
+
+      <!-- FORMULARIO -->
+      <section>
+        <h2>Escríbeme</h2>
+        <form action="contacto.html" method="get">
+
+          <fieldset>
+            <legend>Tus datos</legend>
+            <p>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </p>
+            <p>
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+              <label for="comensales">¿Para cuántas personas cocinas?</label>
+              <input type="number" id="comensales" name="comensales" min="1" max="12">
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Motivo del mensaje</legend>
+            <p>
+              <input type="radio" id="motivo-receta" name="motivo" value="receta" checked required>
+              <label for="motivo-receta">Proponer una receta</label>
+            </p>
+            <p>
+              <input type="radio" id="motivo-duda" name="motivo" value="duda">
+              <label for="motivo-duda">Tengo una duda</label>
+            </p>
+            <p>
+              <input type="radio" id="motivo-otro" name="motivo" value="otro">
+              <label for="motivo-otro">Otro asunto</label>
+            </p>
+          </fieldset>
+
+          <p>
+            <label for="tipo">Tipo de receta:</label>
+            <select id="tipo" name="tipo">
+              <option value="salada">Salada</option>
+              <option value="dulce">Dulce</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="novedades" name="novedades" value="si">
+            <label for="novedades">Quiero recibir las recetas nuevas</label>
+          </p>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+
+      <!--Mis datos-->
+      <section>
+        <h2>Sobre la autora</h2>
+        <p>Nombre: Nadine El Aiboud Khalfaoui</p>
+        <p>Curso: 1º DAW · Mar Alborán</p>
+        <p>Correo: nela0811@g.educaand.es</p>
+      </section>
+    </main>
+
+    <!-- PIE -->
+    <footer>
+      <p>&copy; 2026 Entre sabores</p>
+      <p>
+        Fotos de los platos: propias de la autora.<br>
+        Letra: <a href="https://fonts.google.com/specimen/Spectral" target="_blank" rel="noopener">Spectral, de Google Fonts</a>.<br>
+        Por una comida en familia
+      </p>
+      <p><a href="noticias.xml">Canal RSS de novedades</a></p>
+      <p><a href="https://github.com/nadineelaiboudkh-rgb/NADINE_ELAIBOUD_TEMA2_PROYECTO" target="_blank" rel="noopener">Enlace de la web en GitHub</a></p>
+    </footer>
+  </body>
+</html>

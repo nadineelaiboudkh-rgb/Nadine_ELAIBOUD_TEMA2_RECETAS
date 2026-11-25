@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <title>Logotipo de Entre sabores</title>
+  <!-- El plato -->
+  <circle cx="50" cy="50" r="48" fill="#F2A541"/>
+  <circle cx="50" cy="50" r="40" fill="#FFF8F0"/>
+  <!-- El tenedor (izquierda) -->
+  <rect x="30" y="20" width="4" height="20" rx="2" fill="#8C2F12"/>
+  <rect x="36" y="20" width="4" height="20" rx="2" fill="#8C2F12"/>
+  <rect x="42" y="20" width="4" height="20" rx="2" fill="#8C2F12"/>
+  <rect x="30" y="34" width="16" height="10" rx="4" fill="#8C2F12"/>
+  <rect x="35.5" y="40" width="5" height="40" rx="2.5" fill="#8C2F12"/>
+  <!-- La cuchara (derecha) -->
+  <ellipse cx="62" cy="32" rx="9" ry="13" fill="#8C2F12"/>
+  <rect x="59.5" y="40" width="5" height="40" rx="2.5" fill="#8C2F12"/>
+</svg>
